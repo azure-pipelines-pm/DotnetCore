@@ -3,12 +3,6 @@ variables:
   BuildConfiguration: Release
 
 steps:
-  - task: DotNetCoreCLI@2
-    name: Build
-    inputs:
-      command: build
-      projects: "*.sln"
-      arguments: "--configuration $(BuildConfiguration)"
 
   - task: DotNetCoreCLI@2
     name: Test
