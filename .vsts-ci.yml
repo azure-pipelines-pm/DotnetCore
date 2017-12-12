@@ -31,3 +31,4 @@ steps:
       ConnectedServiceName: "Jamie's Azure Sub"
       WebAppName: "dotnetcore-yaml"
       Package: "$(Build.ArtifactStagingDirectory)/**/*.zip"
+      
