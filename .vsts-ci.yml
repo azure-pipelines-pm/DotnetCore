@@ -24,9 +24,9 @@ steps:
       ArtifactType: Container
       ArtifactName: "drop"
 
-  - task: AzureRmWebAppDeployment@3
-    name: Deploy
-    inputs:
-      ConnectedServiceName: "Jamie's Azure Sub"
-      WebAppName: "dotnetcore-yaml"
-      Package: "$(Build.ArtifactStagingDirectory)/**/*.zip"
+#  - task: AzureRmWebAppDeployment@3
+#    name: Deploy
+#    inputs:
+#      ConnectedServiceName: "Jamie's Azure Sub"
+#      WebAppName: "dotnetcore-yaml"
+#      Package: "$(Build.ArtifactStagingDirectory)/**/*.zip"
