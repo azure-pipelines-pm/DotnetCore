@@ -28,4 +28,7 @@ jobs:
       if: github.event.pull_request.head.repo.fork != 'true'   
 
     - run: echo "Hello Fork"
+      if: github.event.pull_request.head.repo != github.event.pull_request.base.repo 
+
+    - run: echo "Hello Fork"
       if: github.event.pull_request.head.repo.fork == 'true'   
