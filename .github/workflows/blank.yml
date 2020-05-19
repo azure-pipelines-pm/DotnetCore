@@ -23,3 +23,9 @@ jobs:
       id: dump-github
       env: 
         github_payload: ${{ toJson(github) }}
+  
+    - run: echo "Hello Base"
+      if: github.event.pull_request.head.repo.fork != 'true'   
+
+    - run: echo "Hello Fork"
+      if: github.event.pull_request.head.repo.fork == 'true'   
