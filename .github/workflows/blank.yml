@@ -23,3 +23,5 @@ jobs:
       id: dump-github
       env: 
         github_payload: ${{ toJson(github) }}
+        
+    - run: env
